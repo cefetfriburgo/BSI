@@ -1,17 +1,92 @@
-<?php
-/**
- * Front to the WordPress application. This file doesn't do anything, but loads
- * wp-blog-header.php which does and tells WordPress to load the theme.
- *
- * @package WordPress
- */
+<?php 
+	$titulo = "Início";
+	include("top.php"); ?>
 
-/**
- * Tells WordPress to load the WordPress theme and output it.
- *
- * @var bool
- */
-define('WP_USE_THEMES', true);
+    <header>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      	<div class="carousel-inner">
+        <div class="carousel-caption d-none d-md-block">
+            <h1 id='ext'>Sistemas de Informação</h1>
+          </div>
+      		<div class="carousel-item active">
+            <img src="code.jpg" class="d-block w-100" alt="First slide">
+          </div>               		
+      	</div>
+      </div>
+    </header>
 
-/** Loads the WordPress Environment and Template */
-require( dirname( __FILE__ ) . '/wp-blog-header.php' );
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Features Section -->
+      <br><br>
+      <div class="row">
+        <div class="col-lg-8">
+          <h2>Curso é destaque em avaliação do MEC</h2>
+          <p>O curso de Sistemas de Informação do campus Nova Friburgo obteve nota 5 e obteve conceito 4 na avaliação do Ministério da Educação (MEC), sendo considerado <strong>o melhor do país</strong>, dentre mais de 500 cursos em atividade indicados no e-MEC e levando em consideração o conceito contínuo divulgado pelo Inep/MEC.</p>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-fluid rounded" src="./imgs/mec.jpg" alt="">
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+
+      <h2 class="my-4">Conheça o CEFET</h2>
+
+      <!-- Marketing Icons Section -->
+      <div class="row">
+        <div class="col-lg-6">
+          <p>O CEFET é uma instituição pública e federal de ensino. Nossa unidade está localizada em Nova Friburgo, região serrana do Estado do Rio de Janeiro, cidade com clima agradável e com boa qualidade de vida.</p> 
+          <p>Nós, do Colegiado de Informática, buscamos a excelência no ensino de computação, aliando a teoria à prática, em nossos cursos de Bacharelado em Sistemas de Informação e Técnico em Informática. Venha nos conhecer!</p>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-fluid rounded" src="http://www.cefet-rj.br/attachments/article/2534/DSC03309.jpg" alt="">
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <!-- Portfolio Section -->
+      <h2>Estude conosco</h2>
+
+      <div class="row">
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a><img class="card-img-top" src="./imgs/biblioteca2.bmp" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <center><a>Bibliotecas</a></center>
+              </h4>
+              <p class="card-text"> A Biblioteca do Campus Nova Friburgo faz parte do sistema de bibliotecas do Cefet/RJ. É o local perfeito para a construção do conhecimento. Nosso acervo enfoca, principalmente dentres outras àreas, Ciência da Computação/Informática.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a><img class="card-img-top" src="./imgs/lab5.jpg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <center><a>Laboratórios</a></center>
+              </h4>
+              <p class="card-text">Aulas em laboratórios, com computadores. Você aprende na prática, sem deixar a teoria de lado.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <!--<a href="#">--><a><img class="card-img-top" src="./imgs/professores.jpg" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <center><a>Professores</a></center>
+              </h4>
+              <p class="card-text">Professores qualificados e com experiência prática.</p>
+            </div>
+          </div>
+        </div>        
+      </div>
+      <!-- /.row -->
+
+      
+
+    <?php include("footer.php"); ?>
