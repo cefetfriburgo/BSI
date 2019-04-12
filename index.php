@@ -2,31 +2,39 @@
 	$titulo = "Início";
 	include("top.php"); ?>
 
-    <header>
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-      	<div class="carousel-inner">
-        <div class="carousel-caption d-none d-md-block">
+    <header>        
+      	<div>          
+          <!-- <div class="carousel-caption d-none d-md-block">
             <h1 id='ext'>Sistemas de Informação</h1>
-          </div>
-      		<div class="carousel-item active">
-            <img src="code.jpg" class="d-block w-100" alt="First slide">
+          </div> -->
+      		  <div>
+            
+             <img src="code2.jpg" class="d-block w-100" alt="First slide">
+            </div>
           </div>               		
       	</div>
-      </div>
+      
     </header>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container mt-4">
 
-      <!-- Features Section -->
-      <br><br>
+      <!-- Features Section -->     
       <div class="row">
-        <div class="col-lg-8">
-          <h2>Curso é destaque em avaliação do MEC</h2>
-          <p>O curso de Sistemas de Informação do campus Nova Friburgo obteve nota 5 e obteve conceito 4 na avaliação do Ministério da Educação (MEC), sendo considerado <strong>o melhor do país</strong>, dentre mais de 500 cursos em atividade indicados no e-MEC e levando em consideração o conceito contínuo divulgado pelo Inep/MEC.</p>
+        <div class="col-lg-6" >
+          <img class="img-fluid rounded" src="./imgs/conceito4mec.png" alt="">
         </div>
-        <div class="col-lg-4">
-          <img class="img-fluid rounded" src="./imgs/mec.jpg" alt="">
+        <div class="col-lg-6" >
+          <img class="img-fluid rounded" src="./imgs/conceito5enade.png" alt="">
+        </div>
+        <div class="col-lg-6">
+          <h2>Curso é destaque em avaliação do MEC</h2>
+          <p>O Centro Federal Tecnológico Celso Suckow da Fonseca (Cefet RJ), campus Nova Friburgo, obteve conceito 4 na avaliação do Ministério da Educação (MEC), em um dos seus cursos de graduação. Em uma escala de 1 a 5, o curso de Bacharelado em Sistema de Informação foi o contemplado com a nota 4.</p>
+        </div>
+        
+        <div class="col-lg-6">
+          <h2>Alunos obtiveram excelente desempenho no Enade </h2>
+          <p>O curso de Sistemas de Informação do campus Nova Friburgo obteve nota 5 e já é considerado <strong>o melhor do país</strong>, dentre mais de 500 cursos em atividade indicados no e-MEC e levando em consideração o conceito contínuo divulgado pelo Inep/MEC.</p>
         </div>
       </div>
       <!-- /.row -->
@@ -85,8 +93,6 @@
           </div>
         </div>        
       </div>
-      <!-- /.row -->
-
-      
+      <!-- /.row -->      
 
     <?php include("footer.php"); ?>
